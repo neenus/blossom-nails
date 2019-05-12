@@ -8,7 +8,8 @@ module.exports = {
         "@src": resolveSrc("src"),
         "@assets": resolveSrc("src/assets/"),
         "@components": resolveSrc("src/components/"),
-        "@plugins": resolveSrc("src/plugins")
+        "@plugins": resolveSrc("src/plugins"),
+        "@views": resolveSrc("src/views")
       }
     },
     devServer: {
