@@ -34,8 +34,8 @@ export default {
         },
         {
           src: require("@assets/images/slider_2.jpg"),
-          msgHeader: "True Beauty",
-          msgBody: "Comes from within"
+          msgHeader: "Your nails are",
+          msgBody: "The reflection of yourself"
         },
         {
           src: require("@assets/images/slider_3.jpg"),
