@@ -6,9 +6,17 @@
       :src="item.src"
       gradient="to top right, rgba(0,0,0,.33), rgba(0,0,0,.7)"
     >
-      <v-layout class="white--text" fill-height align-center column justify-center>
-        <h1 class="display-2 font-weight-thin mb-3">{{ item.msgHeader }}</h1>
-        <h4 class="subheading">{{ item.msgBody }}</h4>
+      <v-layout
+        class="white--text"
+        fill-height
+        align-center
+        column
+        justify-center
+      >
+        <h1 class="display-2 font-weight-thin mb-3 px-3 text-xs-center">
+          {{ item.msgHeader }}
+        </h1>
+        <h4 class="subheading px-4 text-xs-center">{{ item.msgBody }}</h4>
       </v-layout>
     </v-carousel-item>
   </v-carousel>
@@ -21,18 +29,18 @@ export default {
       items: [
         {
           src: require("@assets/images/slider_1.jpg"),
-          msgHeader: "True Beauty",
-          msgBody: "comes from within"
+          msgHeader: "Blossom Nails",
+          msgBody: "Extravagant, Friendly Nail Service at an Affordable Price."
         },
         {
           src: require("@assets/images/slider_2.jpg"),
-          msgHeader: "Vuetify.js",
-          msgBody: "Build your application today"
+          msgHeader: "True Beauty",
+          msgBody: "Comes from within"
         },
         {
           src: require("@assets/images/slider_3.jpg"),
-          msgHeader: "Vuetify.js",
-          msgBody: "Build your application today"
+          msgHeader: "Come see us",
+          msgBody: "We will turn your nails into a work of art"
         }
       ]
     };

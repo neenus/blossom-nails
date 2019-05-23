@@ -1,7 +1,7 @@
 <template>
-  <v-container fluid>
+  <v-container fluid grey lighten-4>
     <v-layout row wrap>
-      <v-flex class="custom" xs10 offset-xs1>
+      <v-flex class="custom" xs10 offset-xs1 mb-4>
         <v-card flat>
           <v-card-title primary-title>
             <h3 class="text-xs-center" :style="fontSize">
