@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar/>
+    <Navbar dark />
     <v-layout>
       <v-flex class="mt-3" xs8 offset-xs2>
         <!-- <h1 class="mt-5 text-xs-center">This is booking page</h1> -->
@@ -11,7 +11,7 @@
         ></iframe>
       </v-flex>
     </v-layout>
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
@@ -27,6 +27,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+nav.v-toolbar {
+  background-color: indigo;
+}
 #shedulWidget {
   width: 100%;
   height: 80vh;
