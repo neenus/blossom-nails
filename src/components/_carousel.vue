@@ -1,18 +1,12 @@
 <template>
-  <v-carousel dark hide-delimiters height="780">
+  <v-carousel dark hide-delimiters height="85vh">
     <v-carousel-item
       v-for="(item, i) in items"
       :key="i"
       :src="item.src"
       gradient="to top right, rgba(0,0,0,.33), rgba(0,0,0,.7)"
     >
-      <v-layout
-        class="white--text"
-        fill-height
-        align-center
-        column
-        justify-center
-      >
+      <v-layout class="white--text" fill-height align-center column justify-center>
         <h1 class="display-2 font-weight-thin mb-3">{{ item.msgHeader }}</h1>
         <h4 class="subheading">{{ item.msgBody }}</h4>
       </v-layout>
