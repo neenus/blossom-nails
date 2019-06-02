@@ -27,7 +27,8 @@
         dark
         color="indigo darken-4"
         class="hidden-sm-and-down"
-        to="/booking"
+        href="https://www.fresha.com/providers/blossom-nails-spa-bly123fr"
+        target="_blank"
       >
         <v-icon left>calendar_today</v-icon>
         <span class="mr-2">Book Now</span>
