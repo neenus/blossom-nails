@@ -29,6 +29,11 @@ export default new Router({
       component: Booking
     },
     {
+      path: "/services",
+      name: "services",
+      component: () => import("@views/Services.vue")
+    },
+    {
       path: "*",
       component: PageNotFound
     }

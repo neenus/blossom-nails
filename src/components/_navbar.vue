@@ -12,7 +12,7 @@
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
           flat
-          v-for="item in items.slice(0, 4)"
+          v-for="item in items.slice(0, 3)"
           :key="item.title"
           :to="item.link"
           >{{ item.title }}</v-btn
@@ -73,7 +73,7 @@ export default {
       items: [
         { title: "Home", icon: "dashboard", link: "/" },
         { title: "Services", icon: "table_chart", link: "/services" },
-        { title: "Gallery", icon: "photo_library", link: "/gallery" },
+        // { title: "Gallery", icon: "photo_library", link: "/gallery" },
         { title: "Contact", icon: "question_answer", link: "/contact" },
         { title: "Book an Appointment", icon: "access_time", link: "/booking" }
       ]
