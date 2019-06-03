@@ -38,17 +38,30 @@
       <v-list class="pt-4" dense>
         <!-- <v-divider></v-divider> -->
 
-        <v-list-tile v-for="item in items" :key="item.title" :to="item.link">
-          <v-list-tile-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-tile-action>
+        <div v-for="item in items" :key="item.title">
+          <v-list-tile
+            v-if="item.title === 'Book an Appointment'"
+            :href="item.link"
+            target="_blank"
+          >
+            <v-list-tile-action>
+              <v-icon>{{ item.icon }}</v-icon>
+            </v-list-tile-action>
 
-          <v-list-tile-content>
-            <v-list-tile-title :to="item.link">
-              {{ item.title }}
-            </v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
+            <v-list-tile-content>
+              <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+          <v-list-tile v-else :to="item.link">
+            <v-list-tile-action>
+              <v-icon>{{ item.icon }}</v-icon>
+            </v-list-tile-action>
+
+            <v-list-tile-content>
+              <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+        </div>
       </v-list>
     </v-navigation-drawer>
   </div>
@@ -75,7 +88,11 @@ export default {
         { title: "Services", icon: "table_chart", link: "/services" },
         // { title: "Gallery", icon: "photo_library", link: "/gallery" },
         { title: "Contact", icon: "question_answer", link: "/contact" },
-        { title: "Book an Appointment", icon: "access_time", link: "/booking" }
+        {
+          title: "Book an Appointment",
+          icon: "access_time",
+          link: "https://www.fresha.com/providers/blossom-nails-spa-bly123fr"
+        }
       ]
     };
   }
