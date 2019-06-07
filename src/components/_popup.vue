@@ -1,13 +1,6 @@
 <template>
-  <v-dialog
-    v-model="dialog"
-    fullscreen
-    hide-overlay
-    transition="dialog-bottom-transition"
-  >
-    <v-btn round outline slot="activator" class="indigo"
-      >Our Services Menu</v-btn
-    >
+  <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
+    <v-btn round outline large slot="activator" class="indigo">Our Services Menu</v-btn>
     <v-card>
       <v-card-title>
         <v-btn
@@ -22,13 +15,7 @@
         >
           <v-icon>close</v-icon>
         </v-btn>
-        <v-btn
-          :href="priceListFileSrc"
-          download
-          flat
-          round
-          color="indigo darken-4"
-        >
+        <v-btn :href="priceListFileSrc" download flat round color="indigo darken-4">
           <v-icon left>cloud_download</v-icon>Download
         </v-btn>
       </v-card-title>
@@ -42,7 +29,7 @@ export default {
   data() {
     return {
       dialog: false,
-      priceListImgSrc: require("@assets/images/price_list.jpg"),
+      priceListImgSrc: require("@assets/images/price_list.png"),
       priceListFileSrc: require("@assets/price_list.pdf")
     };
   }

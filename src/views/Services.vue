@@ -29,9 +29,9 @@
         :key="service"
       >
         <v-card flat hover>
-          <v-card-title class="justify-center subheading">
-            {{ service }}
-          </v-card-title>
+          <v-card-title class="justify-center subheading">{{
+            service
+          }}</v-card-title>
           <v-divider></v-divider>
         </v-card>
       </v-flex>
@@ -41,6 +41,7 @@
           <v-btn
             round
             outline
+            large
             class="indigo"
             href="https://www.fresha.com/providers/blossom-nails-spa-bly123fr"
             target="_blank"
