@@ -2,14 +2,14 @@
   <div class="about">
     <Navbar />
     <Contact />
-    <v-footer app class="pa-3">
+    <v-footer class="pa-3">
       <v-layout wrap align-center justify-space-around row>
         <v-flex class="xs12 md6 text-xs-center my-2">
           &copy; {{ new Date().getFullYear() }} —
           <strong>Blossom Nails & Spa</strong>
         </v-flex>
       </v-layout>
-  </v-footer>
+    </v-footer>
   </div>
 </template>
 
