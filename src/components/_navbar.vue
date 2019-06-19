@@ -25,6 +25,8 @@
       ></v-toolbar-side-icon>
       <v-btn
         dark
+        round
+        outline
         color="indigo darken-4"
         class="hidden-sm-and-down"
         href="https://www.fresha.com/providers/blossom-nails-spa-bly123fr"

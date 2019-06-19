@@ -4,19 +4,12 @@
       <v-flex class="custom" xs10 offset-xs1 mb-4>
         <v-card flat>
           <v-card-title primary-title>
-            <h3 class="text-xs-center" :style="fontSize">
-              Blossom Nails and Spa
-            </h3>
+            <h3 class="text-xs-center" :style="fontSize">Blossom Nails and Spa</h3>
           </v-card-title>
         </v-card>
       </v-flex>
       <v-flex xs12 md5 mb-3>
-        <v-img
-          contain
-          height="45vh"
-          class="white--text mx-3"
-          :src="aboutSrc"
-        ></v-img>
+        <v-img contain height="45vh" class="white--text mx-3" :src="aboutSrc"></v-img>
       </v-flex>
       <v-flex xs10 md5>
         <div v-html="card_text" class="text-xs-center"></div>
@@ -56,9 +49,9 @@ export default {
         <p class="mt-4 grey--text text-xs-left">
           Call us at (613) 825-1245 to schedule an appointment today alternitavely you can conveniently schedule your appointment online.
         </p>
-        <a href="/booking" class="left v-btn v-btn--router theme--dark indigo darken-4 ma-0">
+        <a href="/booking" class="left v-btn v-btn--router ma-0 v-btn--outline v-btn--depressed v-btn--round indigo--text text--darken-4">
           <div class="v-btn__content">
-            <i aria-hidden="true" class="v-icon v-icon--left material-icons theme--dark">calendar_today</i>
+            <i aria-hidden="true" class="v-icon v-icon--left material-icons ">calendar_today</i>
             <span class="mr-2">Book Now</span>
           </div>
         </a>`
