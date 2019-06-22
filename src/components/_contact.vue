@@ -1,7 +1,7 @@
 <template>
   <div class="contact">
     <v-layout row>
-      <v-flex class="mx-5" container xs12>
+      <v-flex container xs12>
         <v-img :src="imgSrc" height="300"></v-img>
       </v-flex>
     </v-layout>
@@ -65,9 +65,9 @@
           </v-card-text>
           <v-card-text class="text-uppercase text-xs-center pt-0 px-0 mb-3">
             <span>
-              <v-btn round depressed flat href="mailto:info@blossomnails.ca">{{
-                item.email
-              }}</v-btn>
+              <v-btn round depressed flat href="mailto:info@blossomnails.ca">
+                {{ item.email }}
+              </v-btn>
             </span>
           </v-card-text>
         </v-card>
