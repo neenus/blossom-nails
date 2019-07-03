@@ -1,34 +1,9 @@
-# sws-blossomnails.ca
+# Home of Blossom Nails Salon & Spa
 
-## Project setup
-```
-npm install
-```
+# sws-template
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Simple template to get you up and running with static websites.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+# Source
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Keep all static file for deployment under the `public` directory

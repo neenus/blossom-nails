@@ -1,0 +1,82 @@
+html,
+body {
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25)), url(./../images/bg1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#app {
+  /* height: 100vh; */
+  font-family: 'Merriweather', serif;
+}
+
+.brand {
+  width: 100%;
+  margin: 0.50rem auto;
+  font-style: italic;
+}
+
+.logo {
+  margin-bottom: -80px;
+  height: 6.5rem;
+}
+
+.title {
+  padding: 2rem 0;
+}
+
+#app p {
+  margin: 0;
+}
+
+.contact {
+  margin-top: 15px;
+  border-radius: 5px;
+  padding: 2rem 0;
+  background: rgba(0, 0, 0, 0.25)
+}
+
+.social {
+  height: 175px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center
+}
+
+
+.address {
+  /* font-size: 1.25rem; */
+  margin-top: 5px;
+  background: rgba(0, 0, 0, 0.25);
+  margin-bottom: 25px;
+  /* padding: 1rem; */
+}
+
+address {
+  font-size: 1.25rem;
+}
+
+.btn {
+  margin-top: 1.5rem;
+}
+
+.book-now {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .brand {
+    margin: 0;
+  }
+
+  h4.title {
+    font-size: 1.75rem !important;
+  }
+}
